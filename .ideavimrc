@@ -3,7 +3,8 @@ set noerrorbells
 set scrolloff=3
 set ideajoin
 set clipboard+=unnamed
-set rnu
+set number
+set relativenumber
 set showmode
 set incsearch
 
