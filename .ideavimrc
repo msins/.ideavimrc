@@ -8,24 +8,23 @@ set relativenumber
 set showmode
 set incsearch
 
+let mapleader=","
+
 " extensions
 set highlightedyank
 set surround
 set easymotion
 
-nnoremap d "_d
-vnoremap d "_d
+nnoremap x "_x
+vnoremap x "_x
 
-noremap <leader>Q :action CloseAllEditors<cr>
-noremap <leader>q :action CloseEditor<cr>
-noremap <leader>wj :action SplitHorizontally<cr>
-noremap <leader>wk :action SplitVertically<cr>
-noremap <leader>wc :action Unsplit<cr>
-noremap <leader>wh :action NextSplitter<cr>
-noremap <leader>wl :action PrevSplitter<cr>
-noremap <leader>h :action NextTab<cr>
-noremap <leader>l :action PreviousTab<cr>
-noremap <leader>r :action RenameElement<cr>
-noremap <leader>f :action FindInPath<cr>
+noremap ,Q :action CloseAllEditors<cr>
+noremap ,q :action CloseEditor<cr>
+noremap ,r :action RenameElement<cr>
+noremap ,l :action ReformatCode<cr>
+noremap ,ct :ChangeTypeSignature
+noremap ,f :action FindInPath<cr>
+noremap ,b :action Compile<cr>
+
 " Use Jupyter Notebook run shortcut, Ctrl+Enter
 noremap <C-Enter> :action Run<cr>
