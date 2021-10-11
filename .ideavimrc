@@ -23,8 +23,10 @@ noremap ,q :action CloseEditor<cr>
 noremap ,r :action RenameElement<cr>
 noremap ,l :action ReformatCode<cr>
 noremap ,ct :ChangeTypeSignature
-noremap ,f :action FindInPath<cr>
+noremap ,ff :action FindInPath<cr>
+noremap ,fr :action RecentFiles<cr>
 noremap ,b :action Compile<cr>
+noremap ,i :action ImplementMethods<cr>
 
 " Use Jupyter Notebook run shortcut, Ctrl+Enter
 noremap <C-Enter> :action Run<cr>
