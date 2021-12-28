@@ -27,6 +27,7 @@ noremap ,ff :action FindInPath<cr>
 noremap ,fr :action RecentFiles<cr>
 noremap ,b :action Compile<cr>
 noremap ,i :action ImplementMethods<cr>
+noremap ,g :action Generate<cr>
 
 " Use Jupyter Notebook run shortcut, Ctrl+Enter
 noremap <C-Enter> :action Run<cr>
