@@ -22,12 +22,21 @@ noremap ,Q :action CloseAllEditors<cr>
 noremap ,q :action CloseEditor<cr>
 noremap ,r :action RenameElement<cr>
 noremap ,l :action ReformatCode<cr>
-noremap ,ct :ChangeTypeSignature
+noremap ,ct :action ChangeTypeSignature<cr>
+noremap ,g :action Generate<cr>
+noremap ,i :action ImplementMethods<cr>
+noremap ,o :action OverrideMethods<cr>
+noremap ,h :action LocalHistory.ShowHistory<cr>
+
+" find actions
+noremap ,fu :action FindUsages<cr>
+noremap ,fch :action CallHierarchy<cr>
 noremap ,ff :action FindInPath<cr>
 noremap ,fr :action RecentFiles<cr>
-noremap ,b :action Compile<cr>
-noremap ,i :action ImplementMethods<cr>
-noremap ,g :action Generate<cr>
+noremap ,fc :action GotoClass<cr>
 
-" Use Jupyter Notebook run shortcut, Ctrl+Enter
+noremap ,sn :action ShowNavBar<cr>
+
+" run/debug/build actions
+noremap ,b :action Compile<cr>
 noremap <C-Enter> :action Run<cr>
